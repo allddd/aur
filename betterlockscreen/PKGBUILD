@@ -17,15 +17,17 @@ depends=(
     'xorg-xdpyinfo'
     'i3lock-color>=2.13.c.3'
 )
-optdepends=(
-    'feh: for wallpaper-functionality'
-)
+optdepends=('feh: for wallpaper-functionality')
 provides=('betterlockscreen')
 conflicts=('betterlockscreen')
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz"
-        'systemd-service.patch')
-sha256sums=('fdcf58725f0ab56e98ce9b83bd1dad6e1f08c7f9f230c3abaf4191f10ebd5dfd'
-            '08aa35af71cabd2e821ebb5e8bdf6e56ff4b0b3f70fe7af74d6a51aced7c35f1')
+source=(
+    "${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz"
+    'systemd-service.patch'
+)
+sha256sums=(
+    'fdcf58725f0ab56e98ce9b83bd1dad6e1f08c7f9f230c3abaf4191f10ebd5dfd'
+    '08aa35af71cabd2e821ebb5e8bdf6e56ff4b0b3f70fe7af74d6a51aced7c35f1'
+)
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver}"

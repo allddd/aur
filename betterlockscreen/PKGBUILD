@@ -10,7 +10,7 @@ license=('MIT')
 depends=(
     'bash'
     'bc'
-    'imagemagick' 
+    'imagemagick'
     'xorg-xrdb'
     'xorg-xset'
     'xorg-xrandr'
